@@ -5,23 +5,23 @@
 class Tyk < Formula
   desc "Command-line interface for managing Tyk APIs and configurations"
   homepage "https://github.com/sedkis/tyk-cli"
-  version "0.2.3"
+  version "0.2.4"
   license "MIT"
 
   depends_on "curl"
 
   on_macos do
     on_intel do
-      url "https://github.com/sedkis/tyk-cli/releases/download/v0.2.3/tyk-cli_0.2.3_darwin_amd64.tar.gz"
-      sha256 "9adb493887293be253934ec2ee809dc48bb688dd23433581ce039b5f916bbce7"
+      url "https://github.com/sedkis/tyk-cli/releases/download/v0.2.4/tyk-cli_0.2.4_darwin_amd64.tar.gz"
+      sha256 "b9b034d720ff62bf9282c90cfd5e3697e43acda851b12c0f217b0354e1ff6536"
 
       def install
         bin.install "tyk"
       end
     end
     on_arm do
-      url "https://github.com/sedkis/tyk-cli/releases/download/v0.2.3/tyk-cli_0.2.3_darwin_arm64.tar.gz"
-      sha256 "15e847a6b0e636a8221179d7121bcd0841db19888d3f8d99bcd0b9de0d53f08d"
+      url "https://github.com/sedkis/tyk-cli/releases/download/v0.2.4/tyk-cli_0.2.4_darwin_arm64.tar.gz"
+      sha256 "f730f41170c1b5f7dac9bb1762bb393d6975bc0197d734c88692842a3eeb47ea"
 
       def install
         bin.install "tyk"
@@ -32,8 +32,8 @@ class Tyk < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/sedkis/tyk-cli/releases/download/v0.2.3/tyk-cli_0.2.3_linux_amd64.tar.gz"
-        sha256 "2a0a00e77e8d4656716d555c5e1229c6827a6692d2b372746f35d1eea51bb29c"
+        url "https://github.com/sedkis/tyk-cli/releases/download/v0.2.4/tyk-cli_0.2.4_linux_amd64.tar.gz"
+        sha256 "ea41dcd26570711d93ca3ab74b927b89cc48e197808420ec1a43f5b676b84682"
 
         def install
           bin.install "tyk"
@@ -42,8 +42,8 @@ class Tyk < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/sedkis/tyk-cli/releases/download/v0.2.3/tyk-cli_0.2.3_linux_arm64.tar.gz"
-        sha256 "d2f3ebde7569a9535c9af286eb6d900cd3844b4b168a7fcdb23c0669c259ae41"
+        url "https://github.com/sedkis/tyk-cli/releases/download/v0.2.4/tyk-cli_0.2.4_linux_arm64.tar.gz"
+        sha256 "0ba9c1662e2be77102dbacbfe1d46956c56aa64526ee00ea240ff25f1d83c204"
 
         def install
           bin.install "tyk"
